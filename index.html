@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suzana Grocery Store</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Suzana Grocery Store</h1>
+            <button id="toggleMode">Toggle Dark Mode</button>
+        </header>
+
+        <main>
+                    <!-- Counter Feature -->
+                    <section class="interactive">
+                        <h2>Shopping Cart Counter</h2>
+                        <p>Items in cart: <span id="cartCount">0</span></p>
+                        <button id="addItem">Add Item</button>
+                        <button id="removeItem">Remove Item</button>
+                    </section>
+
+                    <!-- FAQ Section -->
+                    <section class="interactive">
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="faq">
+                            <h3 class="faq-question">What are your opening hours?</h3>
+                            <p class="faq-answer">We’re open daily from 8 AM – 9 PM.</p>
+                        </div>
+                        <div class="faq">
+                            <h3 class="faq-question">Do you offer delivery?</h3>
+                            <p class="faq-answer">Yes! Free delivery for orders above $20.</p>
+                        </div>
+                    </section>
+
+                    <!-- Customer Feedback Form -->
+                    <section>
+                    <h2>Customer Feedback</h2>
+                    <form id="feedbackForm">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+
+                        <label for="password">Password (min 6 chars, 1 number):</label>
+                        <input type="password" id="password" required>
+
+                        <label for="message">Your Feedback:</label>
+                        <textarea id="message" required></textarea>
+
+                        <button type="submit">Submit Feedback</button>
+                    </form>
+                    <p id="formMessage"></p>
+                    </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
